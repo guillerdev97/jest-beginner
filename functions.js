@@ -8,6 +8,10 @@ const functions = {
   bye() {
     return "bye bye";
   },
+
+  sum(a, b) {
+    return a + b;
+  }
 };
 
 module.exports = functions;
