@@ -14,3 +14,12 @@ test("sum two numbers", () => {
 
   expect(functions.sum(a, b)).toBe(8);
 });
+
+test("if is greater than 18 years old", () => {
+  const age1 = 19;
+  const age2 = 10;
+  
+  expect.assertions(2);
+  expect(functions.greaterThan18(age1)).toBe("You are an adult");
+  expect(functions.greaterThan18(age2)).toBe("You are not an adult");
+});
