@@ -19,6 +19,20 @@ const functions = {
     }
 
     return "You are not an adult";
+  },
+
+  greaterLessEqual(num) {
+    if(num === 18) {
+      return "equal";
+    }
+
+    if(num > 18) {
+      return "greater";
+    }
+
+    if(num < 18) {
+      return "less";
+    }
   }
 };
 
